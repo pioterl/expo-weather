@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HelloWorld",
-    "slug": "expo-template-default",
+    "name": "expo-weather",
+    "slug": "expo-weather",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -13,13 +13,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pioterlorg.expoweather"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.pioterlorg.expoweather"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +33,18 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6e13f638-baf2-4907-94cd-12b70982e9be"
+      }
+    },
+    "owner": "pioterl-org",
+    "updates": {
+      "url": "https://u.expo.dev/6e13f638-baf2-4907-94cd-12b70982e9be"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
     }
   }
 }
